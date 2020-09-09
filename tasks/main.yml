@@ -18,11 +18,13 @@
   set_fact:
     scan_score: "{{ grep_output.stdout | regex_replace('^.*?<score.*?>(.*)<.*$', '\\1') }}"
 
-- debug:
-    msg: "{{ scan_score }}"
+- name: print scan score
+  debug:
+    msg: "scan score: {{ scan_score }}"
 
-- debug:
-    msg: "need mitigation"
+-name: print mitigation message
+  debug:
+    msg: "based on scan score, needs mitigation"
   when: scan_score | float <= scan_threshold | float
 
 - name: set_mitigation
