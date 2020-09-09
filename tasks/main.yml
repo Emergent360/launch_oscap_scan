@@ -22,7 +22,7 @@
   debug:
     msg: "scan score: {{ scan_score }}"
 
--name: print mitigation message
+- name: print mitigation message
   debug:
     msg: "based on scan score, needs mitigation"
   when: scan_score | float <= scan_threshold | float
