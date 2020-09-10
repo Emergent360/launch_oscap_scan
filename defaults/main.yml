@@ -1,2 +1,3 @@
 ---
 # defaults file for launch_oscap_scan
+mitigate: false
