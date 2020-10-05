@@ -22,6 +22,10 @@
   debug:
     msg: "scan score: {{ scan_score }}"
 
+- name: report url
+  debug:
+    msg: "view report at http://{{ ec2_dns_name }}/report.html"
+
 - name: print mitigation message
   debug:
     msg: "based on scan score, needs mitigation"
