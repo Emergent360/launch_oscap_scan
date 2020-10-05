@@ -1,3 +1,5 @@
 ---
 # defaults file for launch_oscap_scan
+scan_threshold: 85
+snow_call: false
 mitigate: false
