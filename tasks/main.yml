@@ -3,7 +3,8 @@
 - name: run openscap scan
   command: oscap xccdf eval \
     --fetch-remote-resources 
-    --profile xccdf_org.ssgproject.content_profile_ospp \ --results-arf /tmp/arf.xml \
+    --profile "{{ oscap_profile }}" \ 
+    --results-arf /tmp/arf.xml \
     --report /var/www/html/report.html \
     /usr/share/xml/scap/ssg/content/ssg-rhel8-ds.xml
   become: yes

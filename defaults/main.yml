@@ -3,3 +3,4 @@
 scan_threshold: 85
 snow_call: false
 mitigate: false
+oscap_profile: "xccdf_org.ssgproject.content_profile_stig"
