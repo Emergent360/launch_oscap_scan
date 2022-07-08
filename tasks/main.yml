@@ -40,7 +40,7 @@
 - name: SERVICENOW IF CHANGED
   block:
     - name: CREATE AN INCIDENT
-      snow_record:
+      servicenow.servicenow.snow_record:
         username: "{{ snow_username }}"
         password: "{{ snow_password }}"
         instance: "{{ snow_instance }}"
