@@ -25,7 +25,7 @@
 
 - name: report url
   debug:
-    msg: "view report at http://{{ private_dns_name }}/report.html"
+    msg: "view report at http://{{ public_dns_name }}/report.html"
 
 - name: print mitigation message
   debug:
